@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" type="image/png" href="https://cdn-icons-png.flaticon.com/128/3507/3507537.png">
+    <link rel="stylesheet" href="estilo.css">
+    <title>PARA BRUNA... 💖 -- PARTE I</title>
+</head>
+<body>
+    <div class="container">
+
+        <h1>Oi 😊</h1>
+
+        <p class="intro">Criei esse site só pra te dizer umas coisinhas...</p>
+
+        <button id="showMessageBtn">REVELAR... 💭</button>
+
+        <div id="messageBox" class="hidden">
+            <p id="messageText"></p>
+        </div>
+
+        <div id="finalQuestion" class="hidden">
+            <p>Agora que vc já sabe tudo isso...</p>
+            <h2>Vc quer sair comigo? 💖</h2>
+            <div class="buttons">
+                <button onclick="showResponse('Escolha direito por favor 😑😑😑😑')">NÃO</button>
+                <button onclick="showResponse('🤨🤨🤨🤨🤨🤨🤨🤨')">TALVEZ</button>
+                <button onclick="showResponse('Dá pra melhorar ein 😉😉😉😉😉')">SIM</button>
+                <button onclick="handleFinalResponse()">COM CERTEZA</button>
+            </div>
+        </div>
+
+        <div id="responseBox" class="hidden">
+            <p id="responseText"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

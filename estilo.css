@@ -1,0 +1,92 @@
+body{
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(120deg, #ffe6e6, #ffe0f0);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container{
+    text-align: center;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+}
+
+button{
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-size: 16px;
+    background-color: #ff8ab8;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #e76c9c;
+}
+
+.hidden{
+    display: none;
+}
+
+#messageBox{
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
+
+#finalQuestion{
+    margin-top: 30px;
+}
+
+.buttons button{
+    margin: 10px;
+}
+
+#responseBox{
+    margin-top: 25px;
+    padding: 20px;
+    background-color: #ffe4f0;
+    border: 2px dashed #ff8ab8;
+    border-radius: 12px;
+    font-size: 18px;
+    color: #444;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@media (max-width: 480px) {
+    .container{
+        padding: 20px;
+        margin: 10px;
+        max-width: 90%;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    .intro,
+    #messageBox,
+    #finalQuestion,
+    #responseBox,
+    button{
+        font-size: 16px;
+    }
+
+    .buttons button{
+        margin: 8px 5px;
+        padding: 10px 14px;
+    }
+}
